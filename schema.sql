@@ -1,0 +1,32 @@
+CREATE TABLE IF NOT EXISTS `sensor` 
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `utc_time_id` TIMESTAMP DEFAULT NULL,
+    `source_ref` INT DEFAULT NULL,
+    `source_id` VARCHAR DEFAULT NULL,
+    `feed_id` VARCHAR(200) DEFAULT NULL,
+    `primary_link_source_flag` VARCHAR(200) DEFAULT NULL,
+    `samples` VARCHAR(200) DEFAULT NULL,
+    `avg_speed` VARCHAR(200) DEFAULT NULL,
+    `avg_flow` VARCHAR(200) DEFAULT NULL,
+    `avg_occ` VARCHAR(200) DEFAULT NULL,
+    `avg_freeflow_speed` VARCHAR(200) DEFAULT NULL,
+    `avg_travel_time` VARCHAR(200) DEFAULT NULL,
+    `high_quality_samples` VARCHAR(200) DEFAULT NULL,
+    `samples_below_100pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_95pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_90pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_85pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_80pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_75pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_70pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_65pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_60pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_55pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_50pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_45pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_40pct_ff` VARCHAR(200) DEFAULT NULL,
+    `samples_below_35pct_ff` VARCHAR(200) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
