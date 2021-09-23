@@ -35,4 +35,4 @@ models:
   dwh_techStack:
       # Applies to all files under models/example/
       mysql:
-          materialized: table
+          materialized: view
