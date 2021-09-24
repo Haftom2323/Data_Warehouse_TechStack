@@ -2,6 +2,6 @@ version: 2
 
 sources:
   - name: dwh
-    database: dwh
+    # database: dwh
     tables:
       - name: sensor
