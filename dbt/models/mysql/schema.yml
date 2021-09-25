@@ -2,6 +2,9 @@ version: 2
 
 sources:
   - name: dwh
+    description: 'sensor data transformed using dbt' 
     # database: dwh
     tables:
       - name: sensor
+        description: 'details about the sensor data'
+      

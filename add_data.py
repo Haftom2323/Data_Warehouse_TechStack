@@ -102,7 +102,7 @@ if __name__ == "__main__":
     createTables(dbName='DWH')
     headers=["utc_time_id","source_ref", "source_id", "feed_id", "primary_link_source_flag","samples", "avg_speed", "avg_flow","avg_occ","avg_freeflow_speed","avg_travel_time","high_quality_samples","samples_below_100pct_ff","samples_below_95pct_ff","samples_below_90pct_ff","samples_below_85pct_ff","samples_below_80pct_ff","samples_below_75pct_ff","samples_below_70pct_ff","samples_below_65pct_ff","samples_below_60pct_ff","samples_below_55pct_ff","samples_below_50pct_ff","samples_below_45pct_ff","samples_below_40pct_ff","samples_below_35pct_ff","samples_below_30pct_ff","samples_below_25pct_ff","samples_below_20pct_ff","samples_below_15pct_ff","samples_below_10pct_ff","samples_below_5pct_ff"]
     headers=headers[0:26]
-    data=pd.read_csv('.data/I80_davis.txt',header=0, names=headers,index_col=False)
-    data=data[-500:]
+    data=pd.read_csv('./data/I80_davis.txt',header=0, names=headers,index_col=False)
+    data=data[-50000:]
     data['utc_time_id']=data['utc_time_id'].apply(lambda c:pd.Timestamp(c)) 
     insert_to_sensor_table(dbName='DWH', df=data, table_name='sensor')

@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS `sensor`
     `id` INT NOT NULL AUTO_INCREMENT,
     `utc_time_id` TIMESTAMP DEFAULT NULL,
     `source_ref` INT DEFAULT NULL,
-    `source_id` VARCHAR DEFAULT NULL,
+    `source_id` VARCHAR(200) DEFAULT NULL,
     `feed_id` VARCHAR(200) DEFAULT NULL,
     `primary_link_source_flag` VARCHAR(200) DEFAULT NULL,
     `samples` VARCHAR(200) DEFAULT NULL,
